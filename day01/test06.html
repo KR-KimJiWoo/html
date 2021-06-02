@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="order.html" method="GET">
+    <fieldset>
+      <legend> 상품선택 </legend>
+      <p><label for="nametxt">이 름 <input id="nametxt" name="name" placeholder="입력하슈"></label></p>
+      <label>아이디 <input></label>
+      
+    </fieldset>
+    <fieldset>
+      <legend> 배송정보 </legend>
+      <p><input type="text" name="txt"></p>
+      <p> <input type="password" name="pwd"></p>
+      <p><input type="email" name="email"></p>
+      <p><input type="date" name="date"></p>
+      <p><input type="color" name="color"></p>
+    </fieldset>
+
+    <fieldset>
+      <p><b>상품 선택</b></p>
+      <label><input type="checkbox" name="gift" value="s_1"> 1kg </label>
+      <label><input type="checkbox" name="gift" value="s_3"> 3kg </label>
+      <label><input type="checkbox" name="gift" value="s_5"> 5kg </label>
+      <label><input type="checkbox" name="gift" value="s_7"> 7kg </label> <br><br>
+    </fieldset>
+
+    <fieldset> 
+      <p><b>포장 선택</b></p>     
+      <label><input type="radio" name="gift" value="Yes"> 선물 포장 </label>
+      <label><input type="radio" name="gift" value="No"> 선물 포장 안함 </label> <br>
+      메모 <textarea name="메모" rows="5"></textarea>
+      <input type="number" min="0" max="100" step="5" value="5"><br>
+      <input type="range" min="0" max="100" step="5" value="0">
+      <input type="file" name="file"><br>
+      <select name="url" size="2" multiple>
+        <option value="http://naver.com">네이버</option>
+        <option value="http://google.com">구글</option>
+      </select>
+    </fieldset>
+
+    <input type="submit"><br>
+    <input type="image" src="./img/asd.jpg" width="5%" height="5%"><br>
+    <input type="button" value="공지 창 열기" onclick="window.open('order.html')"><br>
+  </form>
+</body>
+
+</html>
